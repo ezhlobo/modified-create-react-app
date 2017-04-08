@@ -1,18 +1,27 @@
 {
-  "name": "modified-create-react-app",
+  "name": "project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "lodash": "^4.17.4",
     "react": "^15.5.3",
-    "react-dom": "^15.5.3"
+    "react-dom": "^15.5.3",
+    "react-redux": "^5.0.3",
+    "react-router-dom": "^4.0.0",
+    "redux": "^3.6.0",
+    "redux-saga": "^0.14.6"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5"
+    "autoprefixer": "^6.7.7",
+    "babel-plugin-react-css-modules": "^2.6.0",
+    "postcss-import": "^9.1.0",
+    "postcss-loader": "^1.3.3",
+    "postcss-nested": "^1.0.0",
+    "react-scripts": "https://github.com/ezhlobo/react-scripts#v0.9.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "WEBPACK_CONFIG_PATH=./config/webpack.config.dev.js react-scripts start",
+    "build": "WEBPACK_CONFIG_PATH=./config/webpack.config.prod.js react-scripts build",
+    "test": "react-scripts test --env=jsdom"
   }
 }
